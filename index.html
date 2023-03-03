@@ -52,6 +52,16 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="header-icon" width="32" height="22">
+            <use href="./images/icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main-page">
@@ -77,7 +87,7 @@
                   <use href="./images/icons/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="advantage-title">Strategy</h3>
+              <h3 class="advantages-title">Strategy</h3>
               <p class="advantages-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -89,7 +99,7 @@
                   <use href="./images/icons/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="advantage-title">Punctuality</h3>
+              <h3 class="advantages-title">Punctuality</h3>
               <p class="advantages-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -101,7 +111,7 @@
                   <use href="./images/icons/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="advantage-title">Diligence</h3>
+              <h3 class="advantages-title">Diligence</h3>
               <p class="advantages-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -113,7 +123,7 @@
                   <use href="./images/icons/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advantage-title">Technologies</h3>
+              <h3 class="advantages-title">Technologies</h3>
               <p class="advantages-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -371,7 +381,7 @@
       </section>
       <!-- Customers section -->
       <section class="customers section">
-        <div class="container">
+        <div class="customers-container container">
           <h2 class="section-header">Customers</h2>
           <ul class="customers-list">
             <li class="customers-item">
@@ -497,7 +507,6 @@
           Leave your contacts and we will call you back
         </strong>
         <form class="modal-form">
-          <!-- Name field -->
           <label for="modal_name" class="modal-form-label">Name</label>
           <div class="modal-form-group">
             <input
@@ -513,7 +522,7 @@
               ></use>
             </svg>
           </div>
-          <!-- Phone field -->
+
           <label for="modal_phone" class="modal-form-label">Phone</label>
           <div class="modal-form-group">
             <input
@@ -527,7 +536,7 @@
               <use href="./images/icons/sprite.svg#icon-modal-form-phone"></use>
             </svg>
           </div>
-          <!-- Email field -->
+
           <label for="modal_email" class="modal-form-label">Email</label>
           <div class="modal-form-group">
             <input
@@ -583,6 +592,81 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle-icon" width="8" height="8">
+          <use href="./images/icons/sprite.svg#modal-close-icon"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-item">
+          <ul class="mobile-nav-menu menu">
+            <li class="menu-item">
+              <a href="./index.html" class="menu-link">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="menu-link">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-item">
+          <ul class="mobile-contacts contacts">
+            <li class="contacts-item">
+              <a href="mailto:info@devstudio.com" class="contacts-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a href="tel:+110001111111" class="contacts-link">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-item">
+          <ul class="social mobile-social">
+            <li class="social-item">
+              <a href="" class="social-link footer-social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link footer-social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link footer-social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link footer-social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="js/modal.js"></script>
   </body>
 </html>

@@ -1,0 +1,135 @@
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+}
+
+.menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #fff;
+    z-index: 999;
+    overflow: auto;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #000;
+    background: var(--color-cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    z-index: 5;
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+.mobile-menu {
+    margin-top: 80px;
+}
+.mobile-menu .mobile-social {
+    gap: 56px;
+}
+
+.mobile-social .social-link {
+    background: var(--color-iris);
+    padding: 8px;
+}
+
+.mobile-social .social-link:hover {
+    background: var(--color-iris);
+}
+
+.mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 285px;
+}
+
+.mobile-nav-menu .menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+}
+.mobile-contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+.mobile-contacts li:last-child a {
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    font-weight: 600;
+    color: var(--color-iris);
+}
